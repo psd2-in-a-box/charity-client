@@ -1,0 +1,7 @@
+/* Import prebuilt Angular Material theme */
+@import '~@angular/material/core/theming/prebuilt/pink-bluegrey.css';
+
+md-toolbar-row > span {
+    margin-left: 1em;
+    margin-right: 1em;
+}
