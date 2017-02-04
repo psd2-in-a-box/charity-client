@@ -9,8 +9,6 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { AccountModule } from './account/account.module';
-
 @NgModule({
   declarations: [
     AppComponent
@@ -21,7 +19,6 @@ import { AccountModule } from './account/account.module';
     HttpModule,
     MaterialModule.forRoot(),
     AppRoutingModule,
-    AccountModule
   ],
   providers: [],
   bootstrap: [AppComponent]

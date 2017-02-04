@@ -10,10 +10,15 @@ env:
     - PROJECT_ID="future-finance-157420"
     - NAME="charity-client"
 
+cache:
+  directories:
+    - node_modules
+
 services:
   - docker
 
 before_install:
+  - openssl aes-256-cbc -K $encrypted_f6af4321454c_key -iv $encrypted_f6af4321454c_iv -in FutureFinance-9562e6d23f91.json.enc -out FutureFinance-9562e6d23f91.json -d
   - gcloud auth activate-service-account --key-file FutureFinance-9562e6d23f91.json
 
 install:

@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/account', pathMatch: 'full' }
 ];
 
 @NgModule({
